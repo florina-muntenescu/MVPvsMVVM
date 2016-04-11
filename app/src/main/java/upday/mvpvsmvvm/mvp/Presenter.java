@@ -2,8 +2,6 @@ package upday.mvpvsmvvm.mvp;
 
 import android.support.annotation.NonNull;
 
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 import upday.mvpvsmvvm.datamodel.IDataModel;
 
