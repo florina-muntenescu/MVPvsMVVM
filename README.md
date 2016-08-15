@@ -14,4 +14,4 @@ Unit test examples for both the Presenter and the ViewModel classes are provided
 
 This project was done for a Droidcon Zagreb 2016 talk on [MVVM & RxJava – the perfect mix][droidcon].
 
-   [droidcon]: <http://droidcon.hr/en/sessions/mvvm-rxjava-the-perfect-mix/>
+   [droidcon]: <http://droidcon.hr/en/sessions/mvvm-rxjava-perfect-mix/>
