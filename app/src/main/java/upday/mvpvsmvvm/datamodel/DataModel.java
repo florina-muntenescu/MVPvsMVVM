@@ -8,7 +8,13 @@ public class DataModel implements IDataModel {
 
     @NonNull
     @Override
-    public Observable<String> getGreeting() {
+    public Observable<String> getGreetingAsync() {
         return Observable.just("Hello, World!");
+    }
+
+    @NonNull
+    @Override
+    public String getGreetingSync() {
+        return "Hello World";
     }
 }

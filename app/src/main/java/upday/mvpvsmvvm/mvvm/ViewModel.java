@@ -19,6 +19,6 @@ public class ViewModel {
 
     @NonNull
     public Observable<String> getGreeting() {
-        return mDataModel.getGreeting();
+        return mDataModel.getGreetingAsync();
     }
 }

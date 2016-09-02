@@ -1,10 +1,9 @@
-package upday.mvpvsmvvm.mvp;
-
-import android.support.annotation.NonNull;
+package upday.mvpvsmvvm.mvc;
 
 /**
+ * A view that can update.
  */
-interface IView {
+public interface IView {
 
     void update();
 }

@@ -28,7 +28,7 @@ public class Presenter implements IPresenter {
     public void bind() {
         mSubscription = new CompositeSubscription();
 
-        mSubscription.add(mDataModel.getGreeting()
+        mSubscription.add(mDataModel.getGreetingAsync()
                                     .subscribe(this::setGreeting));
     }
 

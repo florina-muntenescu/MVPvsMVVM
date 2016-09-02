@@ -29,7 +29,7 @@ public class PresenterTest {
     @Test
     public void testGetGreeting_set_whenViewBinded() {
         String greeting = "Hello!";
-        Mockito.when(mDataModel.getGreeting()).thenReturn(Observable.just(greeting));
+        Mockito.when(mDataModel.getGreetingAsync()).thenReturn(Observable.just(greeting));
 
         mPresenter.bind();
 

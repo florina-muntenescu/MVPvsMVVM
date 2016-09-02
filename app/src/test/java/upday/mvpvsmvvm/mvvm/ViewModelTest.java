@@ -27,7 +27,7 @@ public class ViewModelTest {
     @Test
     public void testGetGreeting_emitsCorrectGreeting() {
         String greeting = "Hello!";
-        Mockito.when(mDataModel.getGreeting()).thenReturn(Observable.just(greeting));
+        Mockito.when(mDataModel.getGreetingAsync()).thenReturn(Observable.just(greeting));
         TestSubscriber<String> testSubscriber = new TestSubscriber<>();
 
         mViewModel.getGreeting().subscribe(testSubscriber);

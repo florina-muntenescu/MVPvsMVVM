@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvp;
+package upday.mvpvsmvvm.mvc;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,9 +11,9 @@ import upday.mvpvsmvvm.R;
 import upday.mvpvsmvvm.datamodel.IDataModel;
 
 /**
- * Implements the view class of the MVP pattern.
+ * Implements the view class of the MVC pattern with passive model.
  */
-public class MVCActivity extends AppCompatActivity implements IVew {
+public class MVCActivity extends AppCompatActivity implements IView {
 
     @NonNull
     private Controller mController;
@@ -29,8 +29,8 @@ public class MVCActivity extends AppCompatActivity implements IVew {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mController = new Controller(this);
         mDataModel = getDataModel();
+        mController = new Controller(this);
 
         setupViews();
     }
@@ -41,10 +41,8 @@ public class MVCActivity extends AppCompatActivity implements IVew {
 
     @Override
     public void update() {
-        String greeting = mDataModel.getGreeting();
-
-        assert mGreetingView!=null;
-        mGreetingView.setText(greeting);
+        assert mGreetingView != null;
+        mGreetingView.setText(mDataModel.getGreetingSync());
     }
 
     @NonNull
@@ -52,15 +50,4 @@ public class MVCActivity extends AppCompatActivity implements IVew {
         return ((DroidconApplication) getApplication()).getDataModel();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mController.unBind();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mController.bind();
-    }
 }
