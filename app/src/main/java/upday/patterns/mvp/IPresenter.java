@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 /**
  * Interface for the Presenter class in the MVP pattern.

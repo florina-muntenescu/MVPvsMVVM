@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import rx.Observable;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 public class PresenterTest {
 
@@ -29,7 +29,7 @@ public class PresenterTest {
     @Test
     public void testGetGreeting_set_whenViewBinded() {
         String greeting = "Hello!";
-        Mockito.when(mDataModel.getGreeting()).thenReturn(Observable.just(greeting));
+        Mockito.when(mDataModel.getGreetingAsync()).thenReturn(Observable.just(greeting));
 
         mPresenter.bind();
 

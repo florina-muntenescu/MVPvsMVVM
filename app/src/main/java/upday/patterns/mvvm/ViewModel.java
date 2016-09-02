@@ -1,9 +1,9 @@
-package upday.mvpvsmvvm.mvvm;
+package upday.patterns.mvvm;
 
 import android.support.annotation.NonNull;
 
 import rx.Observable;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 /**
  * View model for the main activity.
@@ -19,6 +19,6 @@ public class ViewModel {
 
     @NonNull
     public Observable<String> getGreeting() {
-        return mDataModel.getGreeting();
+        return mDataModel.getGreetingAsync();
     }
 }

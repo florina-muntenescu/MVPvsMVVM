@@ -1,10 +1,10 @@
-package upday.mvpvsmvvm;
+package upday.patterns;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
 
-import upday.mvpvsmvvm.datamodel.DataModel;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.DataModel;
+import upday.patterns.datamodel.IDataModel;
 
 public class DroidconApplication extends Application {
 

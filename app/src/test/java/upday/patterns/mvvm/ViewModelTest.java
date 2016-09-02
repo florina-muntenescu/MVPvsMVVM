@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvvm;
+package upday.patterns.mvvm;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.mockito.MockitoAnnotations;
 
 import rx.Observable;
 import rx.observers.TestSubscriber;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 public class ViewModelTest {
 
@@ -27,7 +27,7 @@ public class ViewModelTest {
     @Test
     public void testGetGreeting_emitsCorrectGreeting() {
         String greeting = "Hello!";
-        Mockito.when(mDataModel.getGreeting()).thenReturn(Observable.just(greeting));
+        Mockito.when(mDataModel.getGreetingAsync()).thenReturn(Observable.just(greeting));
         TestSubscriber<String> testSubscriber = new TestSubscriber<>();
 
         mViewModel.getGreeting().subscribe(testSubscriber);

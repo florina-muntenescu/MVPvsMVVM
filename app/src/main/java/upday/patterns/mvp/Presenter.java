@@ -1,9 +1,9 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 import android.support.annotation.NonNull;
 
 import rx.subscriptions.CompositeSubscription;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 /**
  * Implementation class for the Presenter in the MVP model.
@@ -28,7 +28,7 @@ public class Presenter implements IPresenter {
     public void bind() {
         mSubscription = new CompositeSubscription();
 
-        mSubscription.add(mDataModel.getGreeting()
+        mSubscription.add(mDataModel.getGreetingAsync()
                                     .subscribe(this::setGreeting));
     }
 

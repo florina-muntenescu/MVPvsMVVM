@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvvm;
+package upday.patterns.mvvm;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import rx.subscriptions.CompositeSubscription;
-import upday.mvpvsmvvm.DroidconApplication;
-import upday.mvpvsmvvm.R;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.DroidconApplication;
+import upday.patterns.R;
+import upday.patterns.datamodel.IDataModel;
 
 public class MVVMActivity extends AppCompatActivity {
 
