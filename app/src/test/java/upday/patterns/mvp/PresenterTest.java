@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import rx.Observable;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 public class PresenterTest {
 

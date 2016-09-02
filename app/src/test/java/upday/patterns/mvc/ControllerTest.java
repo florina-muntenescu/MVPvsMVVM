@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvc;
+package upday.patterns.mvc;
 
 import org.junit.Before;
 import org.junit.Test;

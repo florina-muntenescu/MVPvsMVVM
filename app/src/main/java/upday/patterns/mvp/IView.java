@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 import android.support.annotation.NonNull;
 

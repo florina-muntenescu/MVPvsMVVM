@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.datamodel;
+package upday.patterns.datamodel;
 
 import android.support.annotation.NonNull;
 

@@ -1,4 +1,4 @@
-package upday.mvpvsmvvm.mvc;
+package upday.patterns.mvc;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,9 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import upday.mvpvsmvvm.DroidconApplication;
-import upday.mvpvsmvvm.R;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.DroidconApplication;
+import upday.patterns.R;
+import upday.patterns.datamodel.IDataModel;
 
 /**
  * Implements the view class of the MVC pattern with passive model.

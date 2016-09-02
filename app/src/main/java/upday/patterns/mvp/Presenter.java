@@ -1,9 +1,9 @@
-package upday.mvpvsmvvm.mvp;
+package upday.patterns.mvp;
 
 import android.support.annotation.NonNull;
 
 import rx.subscriptions.CompositeSubscription;
-import upday.mvpvsmvvm.datamodel.IDataModel;
+import upday.patterns.datamodel.IDataModel;
 
 /**
  * Implementation class for the Presenter in the MVP model.
