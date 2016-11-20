@@ -43,8 +43,8 @@ public class MVVMActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        super.onPause();
         unBind();
+        super.onPause();
     }
 
     private void bind() {
